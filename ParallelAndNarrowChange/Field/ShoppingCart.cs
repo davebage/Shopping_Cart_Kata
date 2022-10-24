@@ -4,21 +4,6 @@ using System.Linq;
 
 namespace ParallelAndNarrowChange.Field
 {
-    public class Product
-    {
-        private readonly decimal _price;
-
-        public Product(decimal price)
-        {
-            _price = price;
-        }
-
-        public decimal GetPrice()
-        {
-            return _price;
-        }
-    }
-
     public class ShoppingCart{
         private readonly List<Product> _products = new List<Product>();
         private const decimal EXPENSIVE_PRICE = 100;
