@@ -20,7 +20,7 @@ namespace ParallelAndNarrowChange.Field
         }
 
         public int NumberOfProducts(){
-            return 1;
+            return _prices.Count;
         }
     }
 }
