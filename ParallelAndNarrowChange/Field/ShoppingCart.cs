@@ -8,7 +8,7 @@ namespace ParallelAndNarrowChange.Field
         private List<decimal> _prices = new List<decimal>();
 
         public decimal CalculateTotalPrice(){
-            return price;
+            return _prices.Sum(price => price);
         }
 
         public bool HasDiscount(){
