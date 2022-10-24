@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ParallelAndNarrowChange.Field
@@ -11,21 +12,26 @@ namespace ParallelAndNarrowChange.Field
         {
             _price = price;
         }
+
+        public decimal GetPrice()
+        {
+            return _price;
+        }
     }
+
     public class ShoppingCart{
-        private readonly List<decimal> _prices = new List<decimal>();
         private readonly List<Product> _products = new List<Product>();
+        private const decimal EXPENSIVE_PRICE = 100;
 
         public decimal CalculateTotalPrice(){
-            return _prices.Sum(price => price);
+            return _products.Sum(product => product.GetPrice());
         }
 
         public bool HasDiscount(){
-            return _prices.Any(price => price > 100);
+            return _products.Any(product => product.GetPrice() > EXPENSIVE_PRICE);
         }
 
         public void Add(int aPrice){
-            _prices.Add(aPrice);
             _products.Add(new Product(aPrice));
         }
 
