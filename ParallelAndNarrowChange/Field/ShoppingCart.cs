@@ -4,8 +4,7 @@ using System.Linq;
 namespace ParallelAndNarrowChange.Field
 {
     public class ShoppingCart{
-        private decimal price;
-        private List<decimal> _prices = new List<decimal>();
+        private readonly List<decimal> _prices = new List<decimal>();
 
         public decimal CalculateTotalPrice(){
             return _prices.Sum(price => price);
@@ -16,7 +15,6 @@ namespace ParallelAndNarrowChange.Field
         }
 
         public void Add(int aPrice){
-            this.price = aPrice;
             _prices.Add(aPrice);
         }
 
