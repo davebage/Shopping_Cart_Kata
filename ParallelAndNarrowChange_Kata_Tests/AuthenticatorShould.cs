@@ -2,7 +2,8 @@
 using NUnit.Framework;
 using ParallelAndNarrowChange.Method;
 
-namespace ParallelAndNarrowChange.Tests{
+namespace ParallelAndNarrowChange_Kata_Tests
+{
     [TestFixture]
     public class AuthenticationServiceTest{
         [Test]

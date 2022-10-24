@@ -98,8 +98,6 @@
     <Compile Include="Method\AuthenticationService.cs" />
     <Compile Include="Method\ClientOfAuthenticator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\AuthenticatorShould.cs" />
-    <Compile Include="Tests\ShoppingCartShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

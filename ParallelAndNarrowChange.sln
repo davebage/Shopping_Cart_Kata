@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32228.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelAndNarrowChange", "ParallelAndNarrowChange\ParallelAndNarrowChange.csproj", "{2669D864-FC16-44D7-94D3-048251745399}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelAndNarrowChange_Kata_Tests", "ParallelAndNarrowChange_Kata_Tests\ParallelAndNarrowChange_Kata_Tests.csproj", "{BAD234BF-D822-44BD-A0DE-82F4A0C3D4E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{2669D864-FC16-44D7-94D3-048251745399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2669D864-FC16-44D7-94D3-048251745399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2669D864-FC16-44D7-94D3-048251745399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD234BF-D822-44BD-A0DE-82F4A0C3D4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD234BF-D822-44BD-A0DE-82F4A0C3D4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD234BF-D822-44BD-A0DE-82F4A0C3D4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD234BF-D822-44BD-A0DE-82F4A0C3D4E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95444CF8-714F-4F3B-AC2A-960599FB1CCA}
 	EndGlobalSection
 EndGlobal
