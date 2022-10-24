@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace ParallelAndNarrowChange.Field
 {
@@ -11,7 +12,7 @@ namespace ParallelAndNarrowChange.Field
         }
 
         public bool HasDiscount(){
-            return price > 100;
+            return _prices.Any(price => price > 100);
         }
 
         public void Add(int aPrice){
