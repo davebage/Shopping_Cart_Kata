@@ -6,14 +6,13 @@ namespace ParallelAndNarrowChange.Field
 {
     public class ShoppingCart{
         private readonly List<Product> _products = new List<Product>();
-        private const decimal EXPENSIVE_PRICE = 100;
 
         public decimal CalculateTotalPrice(){
             return _products.Sum(product => product.GetPrice());
         }
 
         public bool HasDiscount(){
-            return _products.Any(product => product.GetPrice() > EXPENSIVE_PRICE);
+            return _products.Any(product => product.IsExpensive());
         }
 
         public void Add(int aPrice){
